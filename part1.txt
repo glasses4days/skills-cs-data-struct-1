@@ -1,0 +1,106 @@
+Runtime
+
+1. When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches the size of infinity. What is the workload of a function that takes in a list of integers and returns a new list of the even integers?
+2. Order the following runtimes in ascending order by efficiency as n approaches infinity:
+    O(1),
+    O(log n),
+    O(n),
+    O(n log n),
+    O(n2),
+    O(2n)
+
+    I'm not actually sure about this. I think I need to do more reading to understand a bit better. 
+    
+
+Stacks and Queues
+
+1. In the following cases, would a stack or queue be an appropriate data structure?
+    1. The process of loading and unloading pallets onto a flatbed truck
+        Stack
+    2. Putting bottle caps on bottles of beer as they roll down an assembly line
+        Queue
+    3. Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+        Queue? I'm not sure.... After I wrote that answer I saw the parens balanced function
+        and now I'm questioning if it should be a stack.
+2. Describe 2 more examples of when a queue would be an appropriate data structure.
+    Serving customers at a coffee shop. Buying concert tickets online. 
+3. Describe 2 more examples of when a stack would be an appropriate data structure.
+    Back button in a browser, undo function
+    
+
+
+Linked Lists
+
+1. Given the below linked list, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+    The nodes are node Apple, node Berry, and node Cherry. The data for each node is Apple, Berry, and Cherry. The head is pointing to node Apple. There's no tail pointer here. 
+
+2. What’s the difference between a doubly and singly linked list?
+    A doubly linked list has both a next and a previous pointer where a singly linked 
+    list has only a next pointer. 
+3. Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+    If we did not keep track of the tail, we would need to traverse the list to find the 
+    end every time we wanted to add a node. 
+
+Trees
+
+
+1. Given the above tree, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)?
+    [food]
+    [Italian, Indian, Mexican]
+    [Indian, Mexican, lasagna, pizza]
+    [Mexican, lasagna, pizza, tikka masala, saag]
+    [lasagna, pizza, tikka masala, saag, burrito, tacos, enchiladas]
+    [pizza, tikka masala, saag, burrito, tacos, enchiladas]
+    [tikka masala, saag, burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+    [saag, burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+    then burrito!
+2. Given the above tree, in what order would a Depth First Search algorithm visit each node until finding Chicago-style (starting at food)?
+    [food]
+    [Italian, Indian, Mexican]
+    [Italian, Indian, burrito, tacos, enchiladas]
+    [Italian, Indian, burrito, tacos]
+    [Italian, Indian, burrito]
+    [Italian, Indian]
+    [Italian, tikka masala, saag]
+    [Italian, tikka masala]
+    [Italian]
+    [lasagna, pizza]
+    [lasagna, thin crust, Chicago-style, New York-style, Sicilian]
+    [lasagna, thin crust, Chicago-style, New York-style]
+    Then Chicago-style!
+    3. How is a binary search tree different from other trees?
+        In a binary search tree each node has a left and right child (that child can be none). There's also a rule for arranging the tree in order to search it quickly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
